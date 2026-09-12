@@ -218,7 +218,7 @@
     function updateAvatar() { const v = safeName(nameInput.value); avatar.src = `https://robohash.org/${encodeURIComponent(v)}?set=set4&size=170x170&bgset=bg1`; }
     
     document.querySelector('#board').addEventListener('click', () => { 
-      ambientTrack.volume = .36; ambientTrack.currentTime = 0; ambientTrack.play().catch(() => {}); 
+      ambientTrack.volume = .36; ambientTrack.currentTime = 5; ambientTrack.play().catch(() => {}); 
       title.classList.add('hidden'); identity.classList.remove('hidden'); nameInput.focus(); 
     });
     nameInput.addEventListener('input', updateAvatar);
